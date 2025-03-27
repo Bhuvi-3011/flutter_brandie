@@ -51,11 +51,11 @@ class _MainActivityState extends State<MainActivity> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  _buildNavItem("assets/icons/rocket.png", 0),
-                  _buildNavItem("assets/icons/search.png", 1),
-                  _buildNavItem("assets/icons/home.png", 2),
-                  _buildNavItem("assets/icons/messages.png", 3),
-                  _buildNavItem("assets/icons/profile.png", 4),
+                  _buildNavItem("assets/icons/rocket.png", 0,40),
+                  _buildNavItem("assets/icons/search.png", 1,28),
+                  _buildNavItem("assets/icons/home.png", 2,28),
+                  _buildNavItem("assets/icons/messages.png", 3,28),
+                  _buildNavItem("assets/icons/profile.png", 4,28),
                 ],
               ),
             ),
@@ -66,15 +66,15 @@ class _MainActivityState extends State<MainActivity> {
   }
 
   /// Navigation item builder
-  Widget _buildNavItem(String iconPath, int index) {
+  Widget _buildNavItem(String iconPath, int index, double size) {
     return GestureDetector(
       onTap: () => setState(() => _currentIndex = index),
       child: Opacity(
         opacity: _currentIndex == index ? 0.5 : 1,
         child: Image.asset(
           iconPath,
-          height: px(28),
-          width: px(28),
+          height: size,
+          width: size,
           color: _currentIndex != 2 ? Colors.black : Colors.white,
         ),
       ),

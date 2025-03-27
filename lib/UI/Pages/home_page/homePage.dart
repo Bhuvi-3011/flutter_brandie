@@ -38,7 +38,7 @@ class _HomepageState extends State<Homepage> {
         children: [
           SizedBox(height: 14.h, child: buildHeader()),
           Container(
-            height: 5.h,
+            height: 6.h,
             color: Colors.white,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -54,7 +54,7 @@ class _HomepageState extends State<Homepage> {
                       "Share & Win",
                     ][index],
                     style: TextStyle(
-                      fontSize: px(14),
+                      fontSize: px(13),
                       fontWeight: FontWeight.w700,
                       color:
                           selectedTabIndex == index
