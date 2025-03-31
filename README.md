@@ -29,6 +29,10 @@ This issue is likely due to:
 ## Notes for Brandie Assignment
 This project is part of the Brandie Flutter Developer Assignment 2025. The implementation follows the given Figma design and focuses on UI development rather than backend functionality.
 
+## Download APK
+[Download Latest APK](https://github.com/Bhuvi-3011/flutter_brandie/releases/tag/v1.0.0)
+
+
 If you have any questions, feel free to reach out!
 
 
